@@ -12,35 +12,42 @@
 <style>
     /* CSS Reset */
     body {
-        font-family: 'Baloo Bhai', cursive;
+        font-family:'Ubuntu',sans-serif ;
         color: white;
         margin: 0px;
         padding: 0px;
         background: url('img/bg.jpg');
+    }
+    header{
+        background-color: black;
     }
 
     .left {
         display: inline-block;
         /* border: 2px solid red; */
         position: absolute;
-        left: 60px;
+        left: 15px;
         top: 20px;
     }
 
     .left img {
-        width: 136px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        width: 50px;
         filter: invert(100%);
     }
 
     .left div {
         line-height: 19px;
-        font-size: 26px;
+        font-size: 20px;
         text-align: center;
     }
 
     .mid {
-        display: block;
-        width: 36%;
+        display: flex;
+        align-items: center;
+        width: 50%;
         margin: 29px auto;
         /* border: 2px solid green; */
     }
@@ -48,18 +55,20 @@
     .right {
         position: absolute;
         right: 34px;
-        top: 43px;
+        top: 67px;
         display: inline-block;
         /* border: 2px solid yellow; */
     }
 
     .navbar {
-        display: inline-block;
+        display: flex;
+        align-items: center;
     }
 
     .navbar li {
-        display: inline-block;
-        font-size: 25px;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
     }
 
     .navbar li a {
@@ -123,28 +132,31 @@
     }
 </style>
 
-<body>
+<body >
+   
     <header class="header">
         <!-- Left box for logo -->
-        <div class="left">
-            <img src="img/gym.png" alt="">
-            <div>Hactober Fitness</div>
-        </div>
-        <!-- Mid box for navbar -->
-        <div class="mid">
-            <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Fitness Calculator</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-
-        <!-- Right box for buttons -->
-        <div class="right">
-            <button class="btn">Call Us Now</button>
-            <button class="btn">Email Us</button>
-        </div>
+        <nav>
+            <div class="left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAPImcE7lKOYNVwdNKeqMtRDvvbiFlms7irp9wA83rvO4QH7veymp9t-wy8k9oYNPDdk&usqp=CAU" alt="">
+                <div>Hactober Fitness</div>
+            </div>
+            <!-- Mid box for navbar -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Right box for buttons -->
+            <div class="right">
+                <button class="btn">Call Us Now</button>
+                <button class="btn">Email Us</button>
+            </div>
+        </nav>
     </header>
     <div class="container">
         <h1>Join the best gym of Delhi now</h1>
