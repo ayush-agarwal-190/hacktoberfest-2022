@@ -1,8 +1,5 @@
-# hacktoberfest
-# hacktoberfest
-# hacktoberfest
-# hacktoberfest
-# hacktoberfest
+## Hacktoberfest
+
 
 This is a gym website made using HTMl and CSS do add more and more features to it 
 
