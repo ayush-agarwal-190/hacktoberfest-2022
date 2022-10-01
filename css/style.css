@@ -16,7 +16,7 @@ body {
 }
 
 .left img {
-    width: 136px;
+    width: 126px;
     filter: invert(100%);
 }
 
@@ -59,7 +59,7 @@ body {
 
 .navbar li a:hover,
 .navbar li a.active {
-    text-decoration: underline;
+    text-decoration: none;
     color: grey;
 
 }
@@ -81,11 +81,11 @@ body {
 }
 
 .container {
-    border: 2px solid white;
+    border: 2px solid blue;
     margin: 106px 80px;
     padding: 75px;
     width: 33%;
-    border-radius: 28px;
+    border-radius: 38px;
 }
 
 .form-group input {
