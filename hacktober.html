@@ -11,15 +11,22 @@
 <link rel="stylesheet" href="css/style.css">
 <style>
     /* CSS Reset */
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
     body {
         font-family:'Ubuntu',sans-serif ;
         color: white;
         margin: 0px;
         padding: 0px;
-        background: url('img/bg.jpg');
+        background: url('https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5005.jpg?size=626&ext=jpg');
+        background-size: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
     }
     header{
-        background-color: black;
+        background-color: rgb(34, 97, 126);
     }
 
     .left {
@@ -27,21 +34,24 @@
         /* border: 2px solid red; */
         position: absolute;
         left: 15px;
-        top: 20px;
+        top: 10px;
     }
 
     .left img {
-        margin-top: 40px;
-        margin-bottom: 10px;
+        border-radius: 40px;
+        margin-top: 23px;
+        margin-bottom: 5px;
         margin-left: 40px;
         width: 50px;
         filter: invert(100%);
+       
     }
 
     .left div {
         line-height: 19px;
         font-size: 20px;
         text-align: center;
+        color: black;
     }
 
     .mid {
@@ -72,33 +82,35 @@
     }
 
     .navbar li a {
-        color: white;
+        color: black;
         text-decoration: none;
         padding: 34px 23px;
+        font-size: 1.1em;
+        
 
     }
 
     .navbar li a:hover,
     .navbar li a.active {
         text-decoration: underline;
-        color: grey;
+        color: rgb(202, 198, 198);
 
     }
 
     .btn {
         font-family: 'Baloo Bhai', cursive;
         margin: 0px 9px;
-        background-color: black;
-        color: white;
+        background-color: rgb(10, 145, 150);
+        color: black;
         padding: 4px 14px;
-        border: 2px solid grey;
+        border: 2px solid rgb(10, 143, 148);
         border-radius: 10px;
         font-size: 20px;
         cursor: pointer;
     }
 
     .btn:hover {
-        background-color: rgb(31, 30, 30);
+        background-color: rgb(8, 97, 109);
     }
 
     .container {
@@ -138,7 +150,7 @@
         <!-- Left box for logo -->
         <nav>
             <div class="left">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAPImcE7lKOYNVwdNKeqMtRDvvbiFlms7irp9wA83rvO4QH7veymp9t-wy8k9oYNPDdk&usqp=CAU" alt="">
+                <img src="https://img.freepik.com/free-vector/bodybuilding-concept-with-gorilla_225004-372.jpg?size=338&ext=jpg&ga=GA1.2.1534010017.1664610281" alt="" >
                 <div>Hactober Fitness</div>
             </div>
             <!-- Mid box for navbar -->
