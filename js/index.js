@@ -19,3 +19,27 @@ function Validate(email,phone) {
     }
   
   }
+
+
+  function Calculate_bmi(){
+    var height = document.getElementById("height").value;
+    var weight = document.getElementById("weight").value;
+
+    var result = parseFloat(weight) /(parseFloat(height)/100)**2;
+
+    if(!isNaN(result)){
+        document.getElementById("bmi-output").innerHTML = "Your BMI is " + Math.floor(result);
+        if(result < 18.5){
+            document.getElementById("bmi-status").innerHTML = "Underweight";
+        }
+        else if(result < 25){
+            document.getElementById("bmi-status").innerHTML = "Healthy";
+        }
+        else if(result < 30){
+            document.getElementById("bmi-status").innerHTML = "Overweight";
+        }
+        else{
+            document.getElementById("bmi-status").innerHTML = "Obesity";
+        }
+    }
+}

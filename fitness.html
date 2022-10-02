@@ -137,9 +137,9 @@
         <!-- Mid box for navbar -->
         <div class="mid">
             <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="fitness.html">Fitness Calculator</a></li>
+                <li><a href="#" class="active">Fitness Calculator</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
@@ -149,30 +149,33 @@
             <button class="btn">Email Us</button>
         </div>
     </header>
+
+    <script>
+
+
+    </script>
+
     <div class="container">
-        <h1>Join the best gym of Delhi now</h1>
-        <form name="form1">
+        <h1>Calculate your BMI now.</h1>
+        <form name="bmi">
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Name" required>
+                <input type="number" id="height" placeholder="Enter Your Height in Centimeters: " required>
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Age" required>
+                <input type="number" id="weight" placeholder="Enter Your Weight in Kilogrames: " required>
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Gender" required>
+                <input type="button" value="Calculate BMI" onclick="Calculate_bmi()">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Locality" required>
+                <h3 id="bmi-output"></h3>
+                <h3 id="bmi-status"></h3>
+
             </div>
-            <div class="form-group">
-                <input type="text" name="email" placeholder="Enter your Email Id">
-            </div>
-            <div class="form-group">
-                <input type="text" name="phone" placeholder="Enter your Phone Number">
-            </div>
-            <button class="btn" onclick="Validate(document.form1.email,document.form1.phone)">Submit</button>
         </form>
+
     </div>
+
     <div class="footer-container">
         <ul class="footer-left">
             <li>
@@ -189,8 +192,9 @@
         </ul>
         <div class="footer-right">
             <h5>About the company</h5>
-            <p>We have: Membership Management Software, Health Clubs, Boxing & MMA Academies, Personal Training, Fitness, 
-                Recreation & Swim Centers, Parks and more.. joining us will get you the fitness you dream about</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magnam, suscipit ea, vitae rerum, dicta
+                nisi atque omnis inventore soluta assumenda laudantium amet totam dolore minus consequatur aperiam vel
+                fugit? Neque quidem iste officiis praesentium culpa totam obcaecati.</p>
                 <div class="social-icons">
                     <a href="#" class="footer-icon">
                         <i class="fab fa-facebook"></i>
