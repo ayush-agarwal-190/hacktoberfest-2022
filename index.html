@@ -37,24 +37,13 @@
             margin: auto;
             background: #272727;
             padding: 20px 0px;
-
         }
-
-
-
-
-
-
-
-
-
 
         .w3hubs-nav ul {
             margin: 0px;
             padding: 0px;
             text-align: center;
         }
-
 
         .w3hubs-nav ul li {
             display: inline-block;
@@ -72,24 +61,12 @@
             letter-spacing: 1px;
         }
 
-
-
         .w3hubs-nav1 {
             width: 100%;
             height: auto;
             margin: auto;
             margin-top: 15px;
         }
-
-
-
-
-
-
-
-
-
-
 
         @media(max-width:691px) {
 
@@ -100,8 +77,6 @@
         }
 
         @media(max-width:604px) {
-
-
             .w3hubs-nav ul li a {
                 font-size: 14px;
             }
@@ -112,17 +87,12 @@
         }
 
         @media(max-width:559px) {
-
-
             .w3hubs-nav ul li a {
                 font-size: 13px;
             }
-
         }
 
         @media(max-width:539px) {
-
-
             .w3hubs-nav ul li a {
                 font-size: 11px;
             }
@@ -137,17 +107,22 @@
         }
 
         @media(max-width:380px) {
-
             .w3hubs-nav ul li {
                 display: block;
                 padding: 5px;
             }
-
-
         }
     </style>
 </head>
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<!--please use different class names than that of bootstrap provides while creating custom styles-->
+<!--Bootstrap css cdn-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!--Font awesome support-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="css/style.css">
 
 <body>
@@ -166,7 +141,6 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
-
         <!-- Right box for buttons -->
         <div class="right">
             <button class="btn">Call Us Now</button>
@@ -197,20 +171,42 @@
             <button class="btn" onclick="Validate(document.form1.email,document.form1.phone)">Submit</button>
         </form>
     </div>
-    <div class="w3hubs-footer">
-
-
-        <div class="w3hubs-nav">
-            <ul>
-                <li><a href="#">CALL US</a></li>
-
-                <li class="p1"><a href="#">EMAIL</a></li>
-
-
-            </ul>
+    <div class="footer-container">
+        <ul class="footer-left">
+            <li>
+                <h5><span class="footer-icon-no-hover"><i class="fas fa-location"></i></span> 21 Revolution street
+                    <br>Delhi, India</h5>
+            </li>
+            <li>
+                <h5><span class="footer-icon-no-hover"><i class="fas fa-phone"></i></span> +91 1234567890</h5>
+            </li>
+            <li>
+                <h5 class="footer-email-id"><span class="footer-icon-no-hover"><i class="fas fa-address-card"></i></span>
+                    AA@gmail.com</h5>
+            </li>
+        </ul>
+        <div class="footer-right">
+            <h5>About the company</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magnam, suscipit ea, vitae rerum, dicta
+                nisi atque omnis inventore soluta assumenda laudantium amet totam dolore minus consequatur aperiam vel
+                fugit? Neque quidem iste officiis praesentium culpa totam obcaecati.</p>
+                <div class="social-icons">
+                    <a href="#" class="footer-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer-icon">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                </div>
         </div>
-
-        <script type="text/javascript" src="js/index.js"></script>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
