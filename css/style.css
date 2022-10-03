@@ -51,7 +51,7 @@ body {
 }
 
 .navbar li a {
-    color: white;
+    color: #D1CCCB;
     text-decoration: none;
     padding: 34px 23px;
 
@@ -67,8 +67,8 @@ body {
 .btn {
     font-family: 'Baloo Bhai', cursive;
     margin: 0px 9px;
-    background-color: black;
-    color: white;
+    background-color: #D1CCCB;
+    color: lightblue;
     padding: 4px 14px;
     border: 2px solid grey;
     border-radius: 10px;
@@ -77,7 +77,7 @@ body {
 }
 
 .btn:hover {
-    background-color: rgb(31, 30, 30);
+    background-color: black;
 }
 
 .container {
@@ -105,7 +105,7 @@ body {
 }
 
 .container button {
-    display: block;
+    display: flex;
     width: 74%;
     margin: 20px auto;
 }
