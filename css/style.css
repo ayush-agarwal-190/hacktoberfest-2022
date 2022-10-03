@@ -1,184 +1,192 @@
-/* CSS Reset */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Baloo Bhai', cursive;
-    color: white;
-    margin: 0px;
-    padding: 0px;
-    background: url('img/bg.jpg');
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  background: url("img/bg.jpg");
 }
 
-.left {
-    display: inline-block;
-    /* border: 2px solid red; */
-    position: absolute;
-    left: 60px;
-    top: 20px;
-}
-
-.left img {
-    width: 136px;
-    filter: invert(100%);
-}
-
-.left div {
-    line-height: 19px;
-    font-size: 26px;
+h2 {
     text-align: center;
-}
-
-.mid {
-    display: block;
-    width: 36%;
-    margin: 29px auto;
-    /* border: 2px solid green; */
-}
-
-.right {
-    position: absolute;
-    right: 34px;
-    top: 43px;
-    display: inline-block;
-    /* border: 2px solid yellow; */
+    /* text-shadow: 0 5px 10px rgba(0, 0, 0, 1); */
+    mix-blend-mode: overlay;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    text-decoration: none;
+    border-radius: 6px;
 }
 
 .navbar {
-    display: inline-block;
-}
-
-.navbar li {
-    display: inline-block;
-    font-size: 25px;
-}
-
-.navbar li a {
-    color: #D1CCCB;
-    text-decoration: none;
-    padding: 34px 23px;
-
-}
-
-.navbar li a:hover,
-.navbar li a.active {
-    text-decoration: underline;
-    color: grey;
-
-}
-
-.btn {
-    font-family: 'Baloo Bhai', cursive;
-    margin: 0px 9px;
-    background-color: #D1CCCB;
-    color: lightblue;
-    padding: 4px 14px;
-    border: 2px solid grey;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: black;
-}
-
-.container {
-    border: 2px solid white;
-    margin: 106px 80px;
-    padding: 75px;
-    width: 33%;
-    border-radius: 28px;
-}
-
-.form-group input {
-    font-family: 'Baloo Bhai', cursive;
-    text-align: center;
-    display: block;
-    width: 508px;
-    padding: 1px;
-    border: 2px solid black;
-    margin: 11px auto;
-    font-size: 25px;
-    border-radius: 8px;
-}
-
-.container h1 {
-    text-align: center;
-}
-
-.container button {
-    display: flex;
-    width: 74%;
-    margin: 20px auto;
-}
-
-.footer-container {
-    background-color: black;
-    display: flex;
     padding: 20px;
 }
 
-.footer-container .footer-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.navbar .navbar-collapse {
+    flex-direction: row-reverse;
 }
 
-.footer-container li h5{
+.navbar .navbar-collapse a {
+    margin-right: 30px;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-collapse a:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid red;
+}
+
+.navbar .navbar-collapse a i {
+    margin-right: 5px;
+}
+
+.navbar .navbar-brand {
+    font-size: 40px;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+    transform: translateX(10px);
+}
+.navbar .navbar-brand i {
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-brand:hover i{
+    transform: rotate(90deg);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.left .heading {
+  margin-bottom: 30px;
+  width: 600px;
+}
+
+.left .heading h2 {
+  color: #112d4e;
+  font-weight: 600;
+  padding: 12px;
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+.form-group input {
+  font-family: "Baloo Bhai", cursive;
+  text-align: center;
+  display: block;
+  width: 508px;
+  padding: 1px;
+  border: 2px solid black;
+  margin: 11px auto;
+  font-size: 25px;
+  border-radius: 8px;
+}
+
+.submit-btn {
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background-color: red;
+}
+
+.right {
     display: flex;
-    gap: 10px;
+    justify-content: center;
     align-items: center;
 }
-.footer-container li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+.gym-img {
+    width: 1000px;
+    overflow: hidden;
+
 }
 
-.footer-container .footer-email-id {
-    color: blue;
+.shift {
+    margin-right: 15px;
+}
+
+.footer-container {
+  margin-top: 60px;
+  background-color: black;
+  display: flex;
+  padding: 20px;
+}
+
+.footer-container .footer-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-container li h5 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer-container li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-container .footer-icon-no-hover {
-    font-size: 25px;
-    font-weight: normal;
-    background-color: grey;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  font-size: 25px;
+  font-weight: normal;
+  background-color: grey;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .footer-container .footer-icon {
-    font-size: 25px;
-    font-weight: normal;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color: white;
-    text-decoration: none;
+  font-size: 25px;
+  font-weight: normal;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-container .footer-icon:hover {
-    background-color: rgb(82, 82, 82);
-    cursor: pointer;
-    transition: .3s all;
+  background-color: rgb(82, 82, 82);
+  cursor: pointer;
+  transition: 0.3s all;
 }
 
 .footer-container .social-icons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .footer-container .footer-right {
-    flex: 1;
+  flex: 1;
 }
-.footer-container .footer-right  p{
-    max-width: 500px;
+.footer-container .footer-right p {
+  max-width: 500px;
 }
