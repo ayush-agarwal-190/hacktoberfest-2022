@@ -13,12 +13,16 @@
     /* CSS Reset */
     body {
         font-family:'Ubuntu',sans-serif ;
-        color: white;
+        color: rgb(238, 223, 223);
         margin: 0px;
         padding: 0px;
+        font-size: 15px;/*Added font size of the gym*/
         background: url('img/bg.jpg');
+        /*Added the back ground color for good user experience and better looking website*/
+        background-color: rgb(243, 187, 103); /*Added the back ground color for good user experience and better looking website*/
     }
     header{
+    
         background-color: black;
     }
 
@@ -89,7 +93,7 @@
         font-family: 'Baloo Bhai', cursive;
         margin: 0px 9px;
         background-color: black;
-        color: white;
+        color: rgb(248, 242, 242);
         padding: 4px 14px;
         border: 2px solid grey;
         border-radius: 10px;
@@ -98,7 +102,7 @@
     }
 
     .btn:hover {
-        background-color: rgb(31, 30, 30);
+        background-color: rgb(79, 34, 34);
     }
 
     .container {
@@ -115,7 +119,7 @@
         display: block;
         width: 508px;
         padding: 1px;
-        border: 2px solid black;
+        border: 2px solid rgb(108, 56, 56);
         margin: 11px auto;
         font-size: 25px;
         border-radius: 8px;
@@ -146,7 +150,8 @@
                 <ul class="navbar">
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Fitness Calculator</a></li>
+                    <!--Add anchor tag of the fitness pag it will take it to the fitness page-->
+                    <li><a href="http://127.0.0.1:5500/fitness.html#">Fitness Calculator</a></li> <!--Added anchor tag of the fitness page it will take it to the fitness page-->
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
