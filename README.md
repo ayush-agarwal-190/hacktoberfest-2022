@@ -1,7 +1,8 @@
 ## Hacktoberfest
 
 
-This is a gym website made using HTMl and CSS do add more and more features to it 
+This is a gym website made using HTMl and CSS do add more and more features to it <br>
+Live : https://spectacular-pasca-8b7e12.netlify.app
 
 <h1>Instructions to Contribute</h1>
 The Open source Community is awesome, to be a part of it you can start contributing and help people with their projects, here's a guide to do exactly that!
