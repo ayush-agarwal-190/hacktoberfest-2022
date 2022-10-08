@@ -1,10 +1,10 @@
 /* CSS Reset */
 body {
+    background-image: url('../images/1.jpg');
     font-family: 'Baloo Bhai', cursive;
     color: white;
     margin: 0px;
     padding: 0px;
-    background: url('img/bg.jpg');
 }
 
 .left {
@@ -40,9 +40,13 @@ body {
     display: inline-block;
     /* border: 2px solid yellow; */
 }
+.header{
+    opacity: 0.7;
+}
 
 .navbar {
     display: inline-block;
+  
 }
 
 .navbar li {
@@ -65,10 +69,11 @@ body {
 }
 
 .btn {
+    
     font-family: 'Baloo Bhai', cursive;
     margin: 0px 9px;
     background-color: #D1CCCB;
-    color: lightblue;
+    color: rgb(30, 77, 92);
     padding: 4px 14px;
     border: 2px solid grey;
     border-radius: 10px;
@@ -84,7 +89,7 @@ body {
     border: 2px solid white;
     margin: 106px 80px;
     padding: 75px;
-    width: 33%;
+    width:33vw;
     border-radius: 28px;
 }
 
@@ -92,7 +97,6 @@ body {
     font-family: 'Baloo Bhai', cursive;
     text-align: center;
     display: block;
-    width: 508px;
     padding: 1px;
     border: 2px solid black;
     margin: 11px auto;

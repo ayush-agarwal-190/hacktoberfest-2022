@@ -16,11 +16,8 @@
         }
 
         h1 {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50px);
-            margin: 0px;
+           
+            margin: 0px 0px 20px 0px;
             padding: 0px;
             text-align: center;
             font-size: 10em;
@@ -235,7 +232,7 @@
 </body>
 <script>
     var btntop = document.getElementById("topbtn");
-    window.onscroll = function () { topFun(), downfun() };
+    window.onscroll = function () { topFun() };
     const topFun = () => {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             btntop.style.display = "block";
