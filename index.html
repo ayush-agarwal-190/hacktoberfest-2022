@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hacktober Fitness</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        background-color: #272727;
-      }
 
-      h1 {
-        margin: 0px 0px 20px 0px;
-        padding: 0px;
-        text-align: center;
-        font-size: 10em;
-        color: #fff;
-        text-transform: uppercase;
-        text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
-        mix-blend-mode: overlay;
-        font-family: "Roboto Slab", serif;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
-        text-decoration: none;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Hacktober Fitness</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      background-color: #272727;
+    }
 
+    h1 {
+      margin: 0px 0px 20px 0px;
+      padding: 0px;
+      text-align: center;
+      font-size: 10em;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+      mix-blend-mode: overlay;
+      font-family: "Roboto Slab", serif;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+      text-decoration: none;
+    }
+
+    /*
       .w3hubs-footer {
         width: 100%;
         height: auto;
@@ -108,105 +110,291 @@
           padding: 5px;
         }
       }
-      /* styling for scrolling button */
-      #topbtn {
-        position: fixed;
-        bottom: 20px;
-        right: 10px;
-        display: none;
-        z-index: 99;
-        cursor: pointer;
-        background-color: #34a853;
-        border-radius: 50%;
+      */
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+    * {
+      font-family: Open Sans;
+    }
+
+    section {
+      width: 100%;
+      display: inline-block;
+      background: #333;
+      height: 100%;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .footer-distributed {
+      background: #333;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 55px 50px;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    /* Footer left */
+
+    .footer-distributed .footer-left {
+      width: 25%;
+    }
+
+    /* The company logo */
+
+    .footer-distributed h3 {
+      color: #ffffff;
+      font: normal 36px 'Open Sans', cursive;
+      margin: 0;
+    }
+
+    .footer-distributed h3 span {
+      color: lightseagreen;
+    }
+
+    /* Footer links */
+
+    .footer-distributed .footer-links {
+      color: #ffffff;
+      margin: 20px 0 12px;
+      padding: 0;
+    }
+
+    .footer-distributed .footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      font-weight: 400;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .footer-distributed .footer-company-name {
+      color: #222;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    /* Footer Center */
+
+    .footer-distributed .footer-center {
+      width: 30%;
+      height: 60px;
+    }
+
+    .footer-distributed .footer-center i {
+      background-color: #33383b;
+      color: #ffffff;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+    }
+
+    .footer-distributed .footer-center i.fa-envelope {
+      font-size: 17px;
+      line-height: 38px;
+    }
+
+    .footer-distributed .footer-center p {
+      display: inline-block;
+      color: #ffffff;
+      font-weight: 400;
+      vertical-align: middle;
+      margin: 0;
+    }
+
+    .footer-distributed .footer-center p span {
+      display: block;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 2;
+    }
+
+    .footer-distributed .footer-center p a {
+      color: lightseagreen;
+      text-decoration: none;
+    }
+
+    .footer-distributed .footer-links a:before {
+      content: "|";
+      font-weight: 300;
+      font-size: 20px;
+      left: 0;
+      color: #fff;
+      display: inline-block;
+      padding-right: 5px;
+    }
+
+    .footer-distributed .footer-links .link-1:before {
+      content: none;
+    }
+
+    /* Footer Right */
+
+    .footer-distributed .footer-right {
+      width: 40%;
+      height: 300px;
+    }
+
+    .footer-distributed .footer-company-about {
+      line-height: 20px;
+      color: #92999f;
+      font-size: 19px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .footer-distributed .footer-company-about span {
+      display: block;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .footer-distributed .footer-icons {
+      margin-top: 25px;
+      height:20px;
+    }
+
+    .footer-distributed .footer-icons a {
+      display: inline-block;
+      width: 60px;
+      height: 45px;
+      cursor: pointer;
+      background-color: #33383b;
+      border-radius: 2px;
+
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+
+      margin-right: 3px;
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: 880px) {
+
+      .footer-distributed {
+        font: bold 14px sans-serif;
       }
 
-      #topbtn:hover {
-        background-color: #346cf0;
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right {
+        display: block;
+        width: 50%;
+        margin-bottom: 10px;
+        height: 50px;
+        text-align: center;
       }
-    </style>
-  </head>
-  <link
-    href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
-    rel="stylesheet"
-  />
-  <!--please use different class names than that of bootstrap provides while creating custom styles-->
-  <!--Bootstrap css cdn-->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-    crossorigin="anonymous"
-  />
-  <!--Font awesome support-->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
-    <header class="header">
-      <!-- Left box for logo -->
-      <div class="left">
-        <img src="img/gym.png" alt="" />
-        <div>Hacktober Fitness</div>
-      </div>
-      <!-- Mid box for navbar -->
-      <div class="mid">
-        <ul class="navbar">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="fitness.html">Fitness Calculator</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-      <!-- Right box for buttons -->
-      <div class="right">
-        <button class="btn">Call Us Now</button>
-        <button class="btn">Email Us</button>
-      </div>
-    </header>
-    <div class="container">
-      <h1>Join the best gym of Delhi now</h1>
-      <form name="form1">
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Name" required />
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Age" required />
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Gender" required />
-        </div>
-        <div class="form-group">
-          <input
-            type="text"
-            name=""
-            placeholder="Enter your Locality"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <input type="text" name="email" placeholder="Enter your Email Id" />
-        </div>
-        <div class="form-group">
-          <input
-            type="text"
-            name="phone"
-            placeholder="Enter your Phone Number"
-          />
-        </div>
-        <button
-          class="btn"
-          onclick="Validate(document.form1.email,document.form1.phone)"
-        >
-          Submit
-        </button>
-      </form>
+      .footer-distributed .footer-center i {
+        margin-left: 0;
+      }
+
+    }
+
+    .logo {
+      width: 250px;
+      height: 250px;
+      text-align: center;
+    }
+
+    /* styling for scrolling button */
+    #topbtn {
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
+      display: none;
+      z-index: 99;
+      cursor: pointer;
+      background-color: #34a853;
+      border-radius: 50%;
+    }
+
+    #topbtn:hover {
+      background-color: #346cf0;
+    }
+  </style>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet" />
+<!--please use different class names than that of bootstrap provides while creating custom styles-->
+<!--Bootstrap css cdn-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+<!--Font awesome support-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+
+<body>
+  <header class="header">
+    <!-- Left box for logo -->
+    <div class="left">
+      <img src="img/gym.png" alt="" />
+      <div>Hacktober Fitness</div>
     </div>
+    <!-- Mid box for navbar -->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="fitness.html">Fitness Calculator</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- Right box for buttons -->
+    <div class="right">
+      <button class="btn">Call Us Now</button>
+      <button class="btn">Email Us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Join the best gym of Delhi now</h1>
+    <form name="form1">
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Age" required />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Gender" required />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Locality" required />
+      </div>
+      <div class="form-group">
+        <input type="text" name="email" placeholder="Enter your Email Id" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="phone" placeholder="Enter your Phone Number" />
+      </div>
+      <button class="btn" onclick="Validate(document.form1.email,document.form1.phone)">
+        Submit
+      </button>
+    </form>
+  </div>
+  <!--
     <div class="footer-container">
       <div class="footer-right">
         <div class="textdiv">
@@ -283,27 +471,91 @@
         </div>
         
       
-    </div>
-    <!-- Button for Scrolling Up -->
+    </div>-->
 
-    <img src="arrow.png" id="topbtn" onclick="gotop()" alt="hello" />
-    <script type="text/javascript" src="js/index.js"></script>
-  </body>
-  <script>
-    var btntop = document.getElementById("topbtn");
-    window.onscroll = function () {
-      topFun();
-    };
-    const topFun = () => {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        btntop.style.display = "block";
-      } else btntop.style.display = "none";
-    };
-    const gotop = () => {
-      document.documentElement.scrollTop = 0;
-    };
-  </script>
+  <!--Attractive footer-->
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Hacktober<span>Fitness</span></h3>
+      <img class="logo" src="Fitness Center/img/logo.png">
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <span class="footer-icon-no-hover"><i class="fas fa-location"></i></span>
+        <p><span>21 Revolution street</span> Delhi, India</p>
+      </div>
+
+      <div>
+        <span class="footer-icon-no-hover"><i class="fas fa-phone"></i></span>
+        <p>+91 1234567890</p>
+      </div>
+
+      <div>
+        <span class="footer-icon-no-hover"><i class="fas fa-envelope"></i></span>
+        <p><a href="mailto:support@hackfitness.com">AA@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the company</span><br>
+        We have: Membership Management Software, Health Clubs, Boxing & MMA
+        Academies, Personal Training, Fitness, Recreation & Swim Centers,
+        Parks and more.. joining us will get you the fitness you dream about
+      </p><br>
+
+      <div class="footer-icons">
+
+        <div class="facebookdiv">
+          <div>
+            <a href=""><i class="fab fa-facebook"></i></a>
+          </div>
+        <div class="twitterdiv">
+            <div>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
+        <div class="linkedindiv">
+              <div>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+              </div>
+        <div class="githubdiv">
+                <div>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
+        
+      </div>
+
+  </footer>
+
+
+  <!-- Button for Scrolling Up -->
+
+  <img src="arrow.png" id="topbtn" onclick="gotop()" alt="hello" />
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+<script>
+  var btntop = document.getElementById("topbtn");
+  window.onscroll = function () {
+    topFun();
+  };
+  const topFun = () => {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      btntop.style.display = "block";
+    } else btntop.style.display = "none";
+  };
+  const gotop = () => {
+    document.documentElement.scrollTop = 0;
+  };
+</script>
+
 </html>
